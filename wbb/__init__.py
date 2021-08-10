@@ -105,7 +105,7 @@ if not HEROKU:
     )
 else:
     print("[INFO]: INITIALIZING USERBOT CLIENT")
-    app2 = Client(api_id=API_ID, api_hash=API_HASH)
+    app2 = Client(SESSION_STRING, api_id=API_ID, api_hash=API_HASH)
 
 # Aiohttp Client
 print("[INFO]: INITIALZING AIOHTTP SESSION")
